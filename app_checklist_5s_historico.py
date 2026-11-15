@@ -30,7 +30,7 @@ arms = [
 ]
 pent_angles_rad = np.deg2rad([90, 18, 306, 234, 162])
 for lvl in [1, 2, 3, 4]:
-r_pent = 0.8 + lvl * 0.78
+    r_pent = 0.8 + lvl * 0.78
 xs = r_pent * np.cos(pent_angles_rad)
 ys = r_pent * np.sin(pent_angles_rad)
 ax.add_patch(patches.Polygon(np.column_stack([xs, ys]), closed=True, fill=False, edgecolor=LIGHT_BLUE_PENT, linewidth=1.6, zorder=1))
